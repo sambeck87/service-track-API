@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: ServiceTrackAPI_production
-  username: ServiceTrackAPI
+  database: service_track_api
+  username: service_track_user
   password: <%= ENV['SERVICETRACKAPI_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
